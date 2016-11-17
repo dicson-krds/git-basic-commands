@@ -93,6 +93,7 @@ git commit --amend
 ### 9: Reset - Revert Git repository
 To revert to a previous commit, ignoring any changes
 * **HEAD** code get from the git log, Use the first eight digit letter from the commit line
+* **0d1d7fc3**2e5a947fbd92ee598033d85bfc445a50
 
 ```html
 git reset --hard HEAD
