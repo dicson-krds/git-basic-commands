@@ -99,9 +99,3 @@ To revert to a previous commit, ignoring any changes
 git reset --hard HEAD
 git reset --hard 0d1d7fc3
 ```
-
-
-###
-
-```html
-```
