@@ -90,6 +90,14 @@ git commit --amend
 * The new commit and message will appear on GitHub the next time you push
 
 
+### 9: Reset - Revert Git repository
+To revert to a previous commit, ignoring any changes
+* **HEAD** code get from the git log, Use the first eight digit letter from the commit line
+
+```html
+git reset --hard HEAD
+```
+
 
 ###
 
