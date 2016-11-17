@@ -94,7 +94,7 @@ git commit --amend
 To revert to a previous commit, ignoring any changes
 * **HEAD** code get from the git log, Use the first eight digit letter from the commit line
 * **0d1d7fc3**2e5a947fbd92ee598033d85bfc445a50
-* The new commit and message will appear on GitHub the next time you push
+* The chamges will appear on GitHub the next time you push
 
 ```html
 git reset --hard HEAD
