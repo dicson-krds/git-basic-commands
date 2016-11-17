@@ -30,7 +30,15 @@ Commit the files you've added with git add.
 git commit -m "Commit message"
 ```
 
-### 4: Push - Send changes to branch
+### 4: Pull - Get update from server or master
+
+Fetch and merge changes on the remote server to your working directory.
+
+```html
+git pull
+```
+
+### 5: Push - Send changes to branch
 
 Send the changes to the master branch or Other from your local repository
 
@@ -38,6 +46,31 @@ Send the changes to the master branch or Other from your local repository
 git push origin master/branch
 ```
 
+
+### 6: Status - List the files you've changed
+
+List the files you've changed and those you still need to add or commit
+
+```html
+git status
+```
+
+### 7: Branches
+
+**List Branch** - List all the branches
+```html
+git branch
+```
+
+**Switch Branch** - Switch from one branch to another
+```html
+git checkout <branchname>
+```
+
+**Delete Branch** - Delete the feature branch
+```html
+git branch -d <branchname>
+```
 
 ###
 
