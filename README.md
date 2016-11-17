@@ -73,7 +73,7 @@ git branch -d <branchname>
 ```
 
 ### 7: Log -  Lists the commits
-git log lists the commits made in that repository in reverse chronological order
+Git log lists the commits made in that repository in reverse chronological order
 
 ```html
 $ git log
@@ -81,13 +81,14 @@ $ git log
 
 ### 8: Changing a commit message
 You can change the most recent commit message using the below command
-* The commit only exists in your local repository and has not been pushed to GitHub
-* Enter the new commit message and press Enter
-* The new commit and message will appear on GitHub the next time you push
 
 ```html
 git commit --amend
 ```
+* The commit only exists in your local repository and has not been pushed to GitHub
+* Enter the new commit message and press Enter
+* The new commit and message will appear on GitHub the next time you push
+
 
 
 ###
