@@ -5,9 +5,7 @@ List of basic commands to start git
 
 Create a working copy of a local repository
 
-```html
-git clone /path/to/repository
-```
+`git clone /path/to/repository`
 
 
 ### 2: git add
@@ -19,9 +17,8 @@ git clone /path/to/repository
 ### 3: git commit
 Commit files added to staging
 
-```html
-git commit -m "Commit message"
-```
+`git commit -m "Commit message"`
+
 **Commit message should be:**
 * Discriptive
 * Lowercase
