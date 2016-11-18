@@ -12,7 +12,6 @@ git clone /path/to/repository
 
 ### 2: git add
 
-
 `git add -u` Adds only currently tracked files.
 
 `git add -A` Adds all modified, deleted & new files in the working tree to stage
