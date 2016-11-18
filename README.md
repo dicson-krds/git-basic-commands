@@ -118,14 +118,17 @@ git reset --hard
 
 ### 9: git stash
 
+```html
 git stash
-
+```
 **Note:** The command saves your local modifications away and reverts the working directory to match the HEAD commit.
 
+```html
 git stash list
-
+```
 **Note:** This command lists a queue of stashes
 
+```html
 git stash apply
-
+```
 **Note:** This command brings latest stashed changes to working directory
