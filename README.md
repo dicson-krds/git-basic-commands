@@ -19,7 +19,7 @@ Note that git add . will not do anything about deleted files
 git add *
 ```
 
-**git add -A**-  All files in the entire working tree are updated
+**git add -A** -  All files in the entire working tree are updated
 include deletions in the index
 
 ```html
