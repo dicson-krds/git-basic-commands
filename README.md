@@ -36,8 +36,9 @@ git commit -m "Commit message"
 
 **Add new changes to an existing commit?**
 
+```html
 git commit --amend
-
+```
 **Note:** If you already pushed the commits to remote repo. you shouldn't perform this command
 
 ### 4: git pull
@@ -54,11 +55,14 @@ git branch origin <branchname> --rebase
 ```
 
 ### 5: git push
-
+```html
 git push origin <branchname>
+```
 **Note:** Pushes your local commit in a branch to remote
 
+```html
 git push --all origin
+```
 **Note:** Push to all branches to your remote repository
 
 ### 6: git status
@@ -93,10 +97,14 @@ git branch -d <branchname>
 
 ### 7: git log
 
-$ git log
+```html
+git log
+```
 **Note:** Git log list the commits made in that repository in reverse chronological order
 
+```html
 git log --oneline
+```
 **Note:** prints only commit msg
 
 
@@ -111,11 +119,17 @@ git reset --hard
 
 ### 9: git stash
 
+```html
 git stash
+```
 **Note:** The command saves your local modifications away and reverts the working directory to match the HEAD commit.
 
+```html
 git stash list
+```
 **Note:** This command lists a queue of stashes
 
+```html
 git stash apply
+```
 **Note:** This command brings latest stashed changes to working directory
