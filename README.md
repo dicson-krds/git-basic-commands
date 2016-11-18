@@ -81,7 +81,7 @@ List the files you've changed and those you still need to add or commit
 git status
 ```
 
-### 7: git branches
+### 7: git branch
 
 **Branch list** - List all the branches
 ```html
