@@ -114,7 +114,7 @@ git reset --hard 0d1d7fc3
 ```
 
 
-### 10: Stash
+### 10: Stash - Takes the current state of the working directory
 
 Now you want to switch branches, but you don’t want to commit what you’ve been working on yet, so you’ll stash the changes.
 To push a new stash onto your stack, run git stash
