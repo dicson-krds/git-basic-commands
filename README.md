@@ -1,5 +1,5 @@
 # Git basic commands
-Here list out some basic Git commands to get you going with Git
+List of basic commands to start git
 
 ### 1: git clone
 
@@ -12,40 +12,34 @@ git clone /path/to/repository
 
 ### 2: git add
 
-**git add .** - adds all of the files in the current directory
-Note that git add . will not do anything about deleted files
+**git add -u** - Adds only currently tracked files.
 
 ```html
-git add *
+git add -u
 ```
 
-**git add -A** -  All files in the entire working tree are updated
-include deletions in the index
+**git add -A** -  Adds all modified, deleted & new files in the working tree to stage
 
 ```html
 git add -A
 ```
 
 ### 3: git commit
-Commit the files you've added with git add.
-
-* Commit message should be write in release note
-* Better using lowercase
-* Avoid symbols + - /
+Commit files added to staging
 
 ```html
 git commit -m "Commit message"
 ```
+**Commit msg should be:**
+* Commit message should be discriptive
+* Lowercase
+* Present tense
 
-**amend**-  Changing a commit message
+Add new changes to an existing commit?
 
-```html
 git commit --amend
-```
 
-* The commit only exists in your local repository and has not been pushed to GitHub
-* Enter the new commit message and press Enter
-* The new commit and message will appear on GitHub the next time you push
+**Note:** If you already pushed the commits to remote repo. you shouldn't perform this command
 
 ### 4: git pull
 
@@ -55,27 +49,22 @@ Fetch and merge changes on the remote server to your working directory.
 git pull origin <branchname>
 ```
 
-**pull rebase** - Your changes do not deserve a separate branch
+**pull rebase** - Reapply your local commits on top of remote commits
 ```html
 git branch origin <branchname> --rebase
 ```
 
 ### 5: git push
 
-Send the changes to the master branch or Other from your local repository
-
-```html
 git push origin <branchname>
-```
+**Note:** Pushes your local commit in a branch to remote
 
-**Push all branches** to your remote repository
-```html
 git push --all origin
-```
+**Note:** Push to all branches to your remote repository
 
 ### 6: git status
 
-List the files you've changed and those you still need to add or commit
+Gives the current status of your current working tree(ex: modified, deleted, newly created files, .. )
 
 ```html
 git status
@@ -105,44 +94,29 @@ git branch -d <branchname>
 
 ### 7: git log
 
-Git log list the commits made in that repository in reverse chronological order
-
-```html
 $ git log
-```
+**Note:** Git log list the commits made in that repository in reverse chronological order
+
+git log --oneline
+**Note:** prints only commit msg
 
 
 ### 8: git reset
 
-To revert to a previous commit, ignoring any changes
-* **HEAD** code get from the git log, Use the first eight digit letter from the commit line
-* **0d1d7fc3**2e5a947fbd92ee598033d85bfc445a50
-* The chamges will appear on GitHub the next time you push
+Revert to a previous commit, ignoring any changes
 
 ```html
-git reset --hard HEAD
-git reset --hard 0d1d7fc3
+git reset --hard
 ```
+
 
 ### 9: git stash
-Takes the current state of the working directory.
-Now you want to switch branches, but you don’t want to commit what you’ve been working on yet, so you’ll stash the changes.
-To push a new stash onto your stack, run git stash
 
-**Stash** - Takes the current state of the working directory and index, puts it on a stack for later
-
-```html
 git stash
-```
+**Note:** The command saves your local modifications away and reverts the working directory to match the HEAD commit.
 
-**Stash list** - This command will display a queue of current stash items
-
-```html
 git stash list
-```
+**Note:** This command lists a queue of stashes
 
-**Stash apply** - If you want to apply one of the older stashes, you can specify it by naming it
-
-```html
 git stash apply
-```
+**Note:** This command brings latest stashed changes to working directory
