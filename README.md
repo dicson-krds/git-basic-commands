@@ -60,7 +60,7 @@ git pull origin <branchname>
 git branch origin <branchname> --rebase
 ```
 
-### 5: Push - Send changes to branch
+### 5: git push
 
 Send the changes to the master branch or Other from your local repository
 
@@ -73,7 +73,7 @@ git push origin <branchname>
 git push --all origin
 ```
 
-### 6: Status - List the files you've changed
+### 6: git status
 
 List the files you've changed and those you still need to add or commit
 
@@ -81,7 +81,7 @@ List the files you've changed and those you still need to add or commit
 git status
 ```
 
-### 7: Branches
+### 7: git branches
 
 **Branch list** - List all the branches
 ```html
@@ -123,7 +123,6 @@ To revert to a previous commit, ignoring any changes
 git reset --hard HEAD
 git reset --hard 0d1d7fc3
 ```
-
 
 ### 9: git stash
 Takes the current state of the working directory.
