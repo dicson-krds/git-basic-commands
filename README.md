@@ -110,11 +110,10 @@ git log --oneline
 
 ### 8: git reset
 
-Revert to a previous commit, ignoring any changes
-
 ```html
 git reset --hard
 ```
+**Note:** Revert to a previous commit, ignoring any changes
 
 
 ### 9: git stash
