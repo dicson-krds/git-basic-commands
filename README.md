@@ -26,49 +26,35 @@ Commit files added to staging
 
 **Add new changes to an existing commit?**
 
-```html
-git commit --amend
-```
+`git commit --amend`
+
 **Note:** If you already pushed the commits to remote repo. you shouldn't perform this command
 
 ### 4: git pull
 
 Fetch and merge changes on the remote server to your working directory.
-
-```html
-git pull origin <branchname>
-```
+`git pull origin <branchname>`
 
 **pull rebase** - Reapply your local commits on top of remote commits
-```html
-git branch origin <branchname> --rebase
-```
+`git branch origin <branchname> --rebase`
 
 ### 5: git push
-```html
-git push origin <branchname>
-```
+
+`git push origin <branchname>`
 **Note:** Pushes your local commit in a branch to remote
 
-```html
-git push --all origin
-```
+`git push --all origin`
 **Note:** Push to all branches to your remote repository
 
 ### 6: git status
 
 Gives the current status of your current working tree(ex: modified, deleted, newly created files, .. )
-
-```html
-git status
-```
+`git status`
 
 ### 7: git branch
 
 **Branch list** - List all the branches
-```html
-git branch
-```
+`git branch`
 
 **Create Branch** - Create a new branch and switch to it
 ```html
