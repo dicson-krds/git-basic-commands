@@ -12,11 +12,10 @@ git clone /path/to/repository
 
 ### 2: git add
 
-**git add * **- adds all of the files in the current directory
+**git add .** - adds all of the files in the current directory
 Note that git add . will not do anything about deleted files
 
 ```html
-git add <filename>
 git add *
 ```
 
@@ -24,8 +23,7 @@ git add *
 include deletions in the index
 
 ```html
-git add <filename>
-git add *
+git add -A
 ```
 
 ### 3: git commit
