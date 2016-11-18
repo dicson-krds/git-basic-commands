@@ -20,6 +20,7 @@ Commit files added to staging
 `git commit -m "Commit message"`
 
 **Commit message should be:**
+
 * Discriptive
 * Lowercase
 * Present tense
@@ -33,22 +34,27 @@ Commit files added to staging
 ### 4: git pull
 
 Fetch and merge changes on the remote server to your working directory.
+
 `git pull origin <branchname>`
 
 **pull rebase** - Reapply your local commits on top of remote commits
+
 `git branch origin <branchname> --rebase`
 
 ### 5: git push
 
 `git push origin <branchname>`
+
 **Note:** Pushes your local commit in a branch to remote
 
 `git push --all origin`
+
 **Note:** Push to all branches to your remote repository
 
 ### 6: git status
 
 Gives the current status of your current working tree(ex: modified, deleted, newly created files, .. )
+
 `git status`
 
 ### 7: git branch
