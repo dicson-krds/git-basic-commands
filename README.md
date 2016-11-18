@@ -145,5 +145,4 @@ git stash list
 
 ```html
 git stash apply
-git stash apply --index
 ```
