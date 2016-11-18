@@ -53,7 +53,7 @@ Create a working copy of a local repository
 
 `git branch` - List all the branches
 
-`git checkout -b <branchname>` - Create a new branch and switch to it
+`git branch <branchname>` - Create a new branch and switch to it
 
 `git checkout <branchname>` - Switch from one branch to another
 
