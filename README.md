@@ -13,15 +13,9 @@ git clone /path/to/repository
 ### 2: git add
 
 
-```html
-git add -u
-```
-**Note:** Adds only currently tracked files.
+`git add -u` Adds only currently tracked files.
 
-```html
-git add -A
-```
-**Note:** Adds all modified, deleted & new files in the working tree to stage
+`git add -A` Adds all modified, deleted & new files in the working tree to stage
 
 ### 3: git commit
 Commit files added to staging
@@ -29,8 +23,8 @@ Commit files added to staging
 ```html
 git commit -m "Commit message"
 ```
-**Commit msg should be:**
-* Commit message should be discriptive
+**Commit message should be:**
+* Discriptive
 * Lowercase
 * Present tense
 
@@ -105,7 +99,7 @@ git log
 ```html
 git log --oneline
 ```
-**Note:** prints only commit msg
+**Note:** prints only commit message
 
 
 ### 8: git reset
@@ -123,10 +117,6 @@ git stash
 ```
 **Note:** The command saves your local modifications away and reverts the working directory to match the HEAD commit.
 
-```html
-git stash list
-```
-**Note:** This command lists a queue of stashes
 
 ```html
 git stash apply
