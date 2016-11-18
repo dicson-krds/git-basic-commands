@@ -112,3 +112,28 @@ To revert to a previous commit, ignoring any changes
 git reset --hard HEAD
 git reset --hard 0d1d7fc3
 ```
+
+
+### 10: Stash
+
+Now you want to switch branches, but you don’t want to commit what you’ve been working on yet, so you’ll stash the changes.
+To push a new stash onto your stack, run git stash
+
+**Stash** - Takes the current state of the working directory and index, puts it on a stack for later
+
+```html
+git stash
+```
+
+**Stash list** - This command will display a queue of current stash items
+
+```html
+git stash list
+```
+
+**Stash apply** - If you want to apply one of the older stashes, you can specify it by naming it
+
+```html
+git stash apply
+git stash apply --index
+```
