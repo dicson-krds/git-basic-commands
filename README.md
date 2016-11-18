@@ -35,7 +35,7 @@ git commit -m "Commit message"
 Fetch and merge changes on the remote server to your working directory.
 
 ```html
-git pull
+git pull origin master/branch
 ```
 
 ### 5: Push - Send changes to branch
@@ -46,6 +46,10 @@ Send the changes to the master branch or Other from your local repository
 git push origin master/branch
 ```
 
+**Push all branches** to your remote repository
+```html
+git push --all origin
+```
 
 ### 6: Status - List the files you've changed
 
@@ -62,6 +66,11 @@ git status
 git branch
 ```
 
+**Add Branch** - Create a new branch and switch to it
+```html
+git checkout -b <branchname>
+```
+
 **Switch Branch** - Switch from one branch to another
 ```html
 git checkout <branchname>
@@ -73,6 +82,7 @@ git branch -d <branchname>
 ```
 
 ### 7: Log -  Lists the commits
+
 Git log list the commits made in that repository in reverse chronological order
 
 ```html
@@ -80,6 +90,7 @@ $ git log
 ```
 
 ### 8: Changing a commit message
+
 You can change the most recent commit message using the below command
 
 ```html
@@ -91,6 +102,7 @@ git commit --amend
 
 
 ### 9: Reset - Revert Git repository
+
 To revert to a previous commit, ignoring any changes
 * **HEAD** code get from the git log, Use the first eight digit letter from the commit line
 * **0d1d7fc3**2e5a947fbd92ee598033d85bfc445a50
@@ -99,10 +111,4 @@ To revert to a previous commit, ignoring any changes
 ```html
 git reset --hard HEAD
 git reset --hard 0d1d7fc3
-```
-
-
-###
-
-```html
 ```
