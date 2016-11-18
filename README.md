@@ -14,10 +14,10 @@ Create a working copy of a local repository
 
 `git add -A` Adds all modified, deleted & new files in the working tree to stage
 
-### 3: git commit
-Commit files added to staging
 
-`git commit -m "Commit message"`
+### 3: git commit
+
+`git commit -m "Commit message"` - Commit files added to staging
 
 **Commit message should be:**
 
@@ -27,86 +27,57 @@ Commit files added to staging
 
 **Add new changes to an existing commit?**
 
-`git commit --amend`
+`git commit --amend` - If you already pushed the commits to remote repo. you shouldn't perform this command
 
-**Note:** If you already pushed the commits to remote repo. you shouldn't perform this command
 
 ### 4: git pull
 
-Fetch and merge changes on the remote server to your working directory.
+`git pull origin <branchname>` - Fetch and merge changes on the remote server to your working directory.
 
-`git pull origin <branchname>`
+`git branch origin <branchname> --rebase` - Reapply your local commits on top of remote commits
 
-**pull rebase** - Reapply your local commits on top of remote commits
-
-`git branch origin <branchname> --rebase`
 
 ### 5: git push
 
-`git push origin <branchname>`
+`git push origin <branchname>` - Pushes your local commit in a branch to remote
 
-**Note:** Pushes your local commit in a branch to remote
+`git push --all origin` - Push to all branches to your remote repository
 
-`git push --all origin`
-
-**Note:** Push to all branches to your remote repository
 
 ### 6: git status
 
-Gives the current status of your current working tree(ex: modified, deleted, newly created files, .. )
+`git status` - Gives the current status of your current working tree(ex: modified, deleted, newly created files, .. )
 
-`git status`
 
 ### 7: git branch
 
-**Branch list** - List all the branches
-`git branch`
+`git branch` - List all the branches
 
-**Create Branch** - Create a new branch and switch to it
-```html
-git checkout -b <branchname>
-```
+`git checkout -b <branchname>` - Create a new branch and switch to it
 
-**Switch Branch** - Switch from one branch to another
-```html
-git checkout <branchname>
-```
+`git checkout <branchname>` - Switch from one branch to another
 
-**Delete Branch** - Delete the feature branch
-```html
-git branch -d <branchname>
-```
+`git branch -d <branchname>` - Delete the feature branch
+
 
 ### 7: git log
 
-```html
-git log
-```
-**Note:** Git log list the commits made in that repository in reverse chronological order
+`git log` - Git log list the commits made in that repository in reverse chronological order
 
-```html
-git log --oneline
-```
-**Note:** prints only commit message
+`git log --oneline` - prints only commit message
 
 
 ### 8: git reset
 
-```html
-git reset --hard
-```
-**Note:** Revert to a previous commit, ignoring any changes
+`git reset --hard` - Revert to a previous commit, ignoring any changes
 
 
 ### 9: git stash
 
-```html
-git stash
-```
-**Note:** The command saves your local modifications away and reverts the working directory to match the HEAD commit.
+`git stash`
 
+**warning** - The command saves your local modifications away and reverts the working directory to match the HEAD commit.
 
-```html
-git stash apply
-```
-**Note:** This command brings latest stashed changes to working directory
+`git stash apply`
+
+**warning** - This command brings latest stashed changes to working directory
