@@ -12,17 +12,16 @@ git clone /path/to/repository
 
 ### 2: git add
 
-**git add -u** - Adds only currently tracked files.
 
 ```html
 git add -u
 ```
-
-**git add -A** -  Adds all modified, deleted & new files in the working tree to stage
+**Note:** Adds only currently tracked files.
 
 ```html
 git add -A
 ```
+**Note:** Adds all modified, deleted & new files in the working tree to stage
 
 ### 3: git commit
 Commit files added to staging
@@ -35,7 +34,7 @@ git commit -m "Commit message"
 * Lowercase
 * Present tense
 
-Add new changes to an existing commit?
+**Add new changes to an existing commit?**
 
 git commit --amend
 
