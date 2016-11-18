@@ -80,7 +80,7 @@ git status
 git branch
 ```
 
-**Add Branch** - Create a new branch and switch to it
+**Create Branch** - Create a new branch and switch to it
 ```html
 git checkout -b <branchname>
 ```
@@ -118,9 +118,7 @@ git reset --hard
 
 ### 9: git stash
 
-```html
-git stash
-```
+*git stash*
 **Note:** The command saves your local modifications away and reverts the working directory to match the HEAD commit.
 
 ```html
